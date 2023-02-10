@@ -1,3 +1,6 @@
+from ast import ImportFrom
+
+
 class Board:
     def __init__(self, N, M, H):
         #N is number of cols/rows in n x n grid
@@ -23,6 +26,44 @@ class Board:
             print('Parameters (H == 1 or H == 0)')
             self.H = int(input('Please enter a new starting player: '))
 
+        board = [N][N]
+
+
+    def gameplay():
         
+        if(H == 0):
+            humanKey = 'o'
+            aiKey = 'x'
+            while 1:
+                if H == 0:
+                    #human make move
+                    H = 1
+                elif H == 1:
+                    #ai make move
+                    H = 0
+
+        elif(H == 1):
+            humankey = 'x'
+            aiKey = 'o'
+            while 1:
+                if H == 1:
+                    #ai make move
+                    H = 0
+                elif H == 0:
+                    #human make move
+                    H = 1
+
+
+    def printBoard(N):
+        print("+" + "---+" * N)
+        for i in range(N):
+            print("|", end="")
+            for g in range(N):
+                print(" {} |".format(g),end="")
+            print("\n+" + "---+" * N)
+
+
+            
+
     
    

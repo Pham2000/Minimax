@@ -15,5 +15,16 @@ def main():
 
     board = Board(N, M, H)
 
+def printBoard(N):
+    print("+" + "---+" * N)
+    for i in range(N):
+        print("|", end="")
+        for g in range(N):
+            print(" {} |".format(g),end="")
+        print("\n+" + "---+" * N)
+
+    
+
 if __name__ == '__main__':
-    main()
+    #main()
+    printBoard(10)
