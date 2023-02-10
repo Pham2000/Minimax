@@ -15,6 +15,7 @@ def main():
 
     board = Board(N, M, H)
 
+#testing board
 def printBoard(N):
     print("+" + "---+" * N)
     for i in range(N):

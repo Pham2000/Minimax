@@ -28,7 +28,7 @@ class Board:
 
         board = [N][N]
 
-
+    #idk if this how you want it
     def gameplay():
         
         if(H == 0):
@@ -53,7 +53,7 @@ class Board:
                     #human make move
                     H = 1
 
-
+    #print board
     def printBoard(N):
         print("+" + "---+" * N)
         for i in range(N):
@@ -63,7 +63,6 @@ class Board:
             print("\n+" + "---+" * N)
 
 
-            
 
     
    
